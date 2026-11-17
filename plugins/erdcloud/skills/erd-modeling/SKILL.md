@@ -48,4 +48,4 @@ Prefer `update_tables` and `update_columns` over many single-item calls when cha
 
 ## If a call is rejected with 401
 
-The access token is missing, expired (tokens last at most 90 days) or was regenerated. Tell the user to generate a new token in ERDCloud (open a diagram, then the AI (MCP) panel) and set it as the `ERDCLOUD_MCP_TOKEN` environment variable, then restart Claude Code.
+The ERDCloud sign-in is missing or expired, or the user disconnected the app in ERDCloud. Tell the user to run `/mcp` in Claude Code, select `erdcloud` and sign in again. Connected apps can be reviewed and disconnected in ERDCloud (open a diagram, then the AI (MCP) panel).

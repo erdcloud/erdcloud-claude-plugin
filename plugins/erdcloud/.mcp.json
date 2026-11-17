@@ -1,9 +1,6 @@
 {
   "erdcloud": {
     "type": "http",
-    "url": "https://www.erdcloud.com/mcp",
-    "headers": {
-      "Authorization": "Bearer ${ERDCLOUD_MCP_TOKEN}"
-    }
+    "url": "https://www.erdcloud.com/mcp"
   }
 }

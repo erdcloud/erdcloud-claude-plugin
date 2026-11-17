@@ -1,6 +1,6 @@
 {
   "name": "erdcloud",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Create and edit ERDCloud diagrams (tables, columns, relations, domains, memos) from Claude Code through the ERDCloud MCP server, with modeling guidance built in.",
   "author": {
     "name": "ERDCloud",
