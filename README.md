@@ -10,13 +10,15 @@ A [Claude Code](https://claude.com/claude-code) plugin marketplace for [ERDCloud
 
 | Plugin | Description |
 |---|---|
-| `erdcloud` | Connects Claude Code to the ERDCloud MCP server so Claude can read and edit your diagrams (tables, columns, relations, domains, memos), and teaches Claude the right order of operations. |
+| `erdcloud` | Connects Claude Code to the ERDCloud MCP server so Claude can read and edit your diagrams (tables, columns, relations, domains, memos), draw sequence diagrams, flowcharts, UML class diagrams and free-form shapes, and teaches Claude the right order of operations. |
 
 What `erdcloud` contains:
 
 - **MCP server** `erdcloud` -> `https://www.erdcloud.com/mcp`
 - **Skill `erd-modeling`**: domain-first workflow, relationship workflow, and tool overview. Loaded automatically when you work on an ERD.
 - **Skill `erd-from-sql`** (`/erdcloud:erd-from-sql <diagram URL> [file or description]`): build a diagram from SQL DDL or a description.
+- **Skill `canvas-diagrams`**: which tool to use for sequence diagrams, flowcharts, UML class diagrams and free-form shapes, and how to edit the result. Loaded automatically.
+- **Skill `diagram-from-description`** (`/erdcloud:diagram-from-description <diagram URL> <sequence|flowchart|class> <description or path>`): draw a sequence diagram, flowchart or UML class diagram from a description or from source code.
 
 ### Install
 
@@ -33,6 +35,14 @@ What `erdcloud` contains:
 
    ```
    /erdcloud:erd-from-sql https://www.erdcloud.com/d/<your diagram id> an online shop with users, orders and products
+   ```
+
+   Other diagrams on the same canvas:
+
+   ```
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<your diagram id> sequence login with a token check
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<your diagram id> flowchart order approval with a manager and a finance lane
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<your diagram id> class src/domain
    ```
 
 ### Permissions and security
@@ -62,13 +72,15 @@ What `erdcloud` contains:
 
 | 플러그인 | 설명 |
 |---|---|
-| `erdcloud` | Claude Code를 ERDCloud MCP 서버에 연결해 다이어그램(테이블, 컬럼, 관계, 도메인, 메모)을 읽고 편집하게 하고, 올바른 작업 순서를 Claude에게 알려줍니다. |
+| `erdcloud` | Claude Code를 ERDCloud MCP 서버에 연결해 다이어그램(테이블, 컬럼, 관계, 도메인, 메모)을 읽고 편집하게 하고, 시퀀스 다이어그램·플로우차트·UML 클래스 다이어그램·도형을 그리게 하며, 올바른 작업 순서를 Claude에게 알려줍니다. |
 
 포함 내용:
 
 - **MCP 서버** `erdcloud` -> `https://www.erdcloud.com/mcp`
 - **스킬 `erd-modeling`**: 도메인 우선 워크플로, 관계 생성 워크플로, 도구 목록. ERD 작업 시 자동으로 적용됩니다.
 - **스킬 `erd-from-sql`** (`/erdcloud:erd-from-sql <다이어그램 URL> [파일 또는 설명]`): SQL DDL이나 설명으로 다이어그램을 만듭니다.
+- **스킬 `canvas-diagrams`**: 시퀀스 다이어그램, 플로우차트, UML 클래스 다이어그램, 도형에 어떤 도구를 쓰는지와 결과를 수정하는 방법. 자동으로 적용됩니다.
+- **스킬 `diagram-from-description`** (`/erdcloud:diagram-from-description <다이어그램 URL> <sequence|flowchart|class> <설명 또는 경로>`): 설명이나 소스 코드로 시퀀스 다이어그램, 플로우차트, UML 클래스 다이어그램을 그립니다.
 
 ### 설치
 
@@ -85,6 +97,14 @@ What `erdcloud` contains:
 
    ```
    /erdcloud:erd-from-sql https://www.erdcloud.com/d/<다이어그램 id> 사용자, 주문, 상품이 있는 쇼핑몰
+   ```
+
+   같은 캔버스에 다른 다이어그램도 그릴 수 있습니다.
+
+   ```
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<다이어그램 id> sequence 토큰 검증이 있는 로그인
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<다이어그램 id> flowchart 팀장과 재무 레인이 있는 주문 승인
+   /erdcloud:diagram-from-description https://www.erdcloud.com/d/<다이어그램 id> class src/domain
    ```
 
 ### 권한과 보안

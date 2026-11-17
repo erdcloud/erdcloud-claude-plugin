@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "erdcloud",
-      "description": "Create and edit ERDCloud diagrams (tables, columns, relations, domains, memos) from Claude Code through the ERDCloud MCP server, with modeling guidance built in.",
+      "description": "Create and edit ERDCloud diagrams from Claude Code through the ERDCloud MCP server: ERD tables, columns, relations, domains and memos, plus sequence diagrams, flowcharts, UML class diagrams and free-form shapes, with modeling guidance built in.",
       "author": {
         "name": "ERDCloud",
         "email": "support@erdcloud.com"

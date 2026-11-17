@@ -39,12 +39,13 @@ Prefer `update_tables` and `update_columns` over many single-item calls when cha
 
 | Area | Tools |
 |---|---|
-| Read | `get_diagram`, `list_tables`, `get_table`, `list_memos`, `list_domains`, `get_snapshot` |
+| Read | `get_diagram`, `list_tables`, `get_table`, `list_memos`, `list_domains`, `get_snapshot` (also returns shapes and connectors) |
 | Tables | `create_table`, `update_table`, `update_tables`, `delete_table`, `import_sql` |
 | Columns | `add_column`, `update_column`, `update_columns`, `delete_column` |
 | Relations | `create_relation`, `delete_relation` |
 | Domains | `create_domain`, `update_domain`, `delete_domain` |
 | Memos | `create_memo`, `update_memo`, `delete_memo` |
+| Canvas drawings (shapes, connectors, sequence diagrams, flowcharts, UML class diagrams) | see the `canvas-diagrams` skill: `list_shapes`, `list_connectors`, `create_shape`, `create_connector`, `create_sequence_diagram`, `create_flowchart`, `create_class_diagram`, ... |
 
 ## If a call is rejected with 401
 
