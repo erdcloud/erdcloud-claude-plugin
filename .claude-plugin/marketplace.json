@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "erdcloud",
+  "description": "Official Claude Code plugins for ERDCloud, the web-based ERD (Entity Relationship Diagram) modeling service.",
+  "owner": {
+    "name": "ERDCloud",
+    "email": "support@erdcloud.com"
+  },
+  "plugins": [
+    {
+      "name": "erdcloud",
+      "description": "Create and edit ERDCloud diagrams (tables, columns, relations, domains, memos) from Claude Code through the ERDCloud MCP server, with modeling guidance built in.",
+      "author": {
+        "name": "ERDCloud",
+        "email": "support@erdcloud.com"
+      },
+      "source": "./plugins/erdcloud",
+      "category": "database",
+      "homepage": "https://www.erdcloud.com"
+    }
+  ]
+}

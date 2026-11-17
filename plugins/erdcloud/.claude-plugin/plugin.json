@@ -1,0 +1,13 @@
+{
+  "name": "erdcloud",
+  "version": "1.0.0",
+  "description": "Create and edit ERDCloud diagrams (tables, columns, relations, domains, memos) from Claude Code through the ERDCloud MCP server, with modeling guidance built in.",
+  "author": {
+    "name": "ERDCloud",
+    "email": "support@erdcloud.com"
+  },
+  "homepage": "https://www.erdcloud.com",
+  "repository": "https://github.com/erdcloud/erdcloud-claude-plugin",
+  "license": "MIT",
+  "keywords": ["erd", "database", "data-modeling", "schema", "sql", "mcp", "erdcloud"]
+}
