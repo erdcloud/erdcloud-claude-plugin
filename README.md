@@ -22,7 +22,13 @@ What `erdcloud` contains:
 
 ### Install
 
-1. Start Claude Code and install the plugin:
+1. Start Claude Code and install the plugin. In Claude Code 2.1.275 or later one command does both steps:
+
+   ```
+   /plugin install erdcloud --marketplace erdcloud/erdcloud-claude-plugin
+   ```
+
+   Or, in two steps (any version):
 
    ```
    /plugin marketplace add erdcloud/erdcloud-claude-plugin
@@ -84,7 +90,13 @@ What `erdcloud` contains:
 
 ### 설치
 
-1. Claude Code에서 플러그인을 설치합니다.
+1. Claude Code에서 플러그인을 설치합니다. Claude Code 2.1.275 이상에서는 명령 한 줄로 끝납니다.
+
+   ```
+   /plugin install erdcloud --marketplace erdcloud/erdcloud-claude-plugin
+   ```
+
+   또는 두 단계로 설치합니다(모든 버전).
 
    ```
    /plugin marketplace add erdcloud/erdcloud-claude-plugin
