@@ -37,6 +37,8 @@ What `erdcloud` contains:
 
 2. Restart Claude Code, run `/mcp`, select `erdcloud` and sign in to ERDCloud in the browser window that opens. Review the permission screen and click **Allow**. No token to copy.
 
+   No ERDCloud account yet? On the sign-in page choose **Google** or **GitHub**: an account is created automatically on your first sign-in and you return to the permission screen. If you sign up with an email address instead, verify the email first and then run `/mcp` again in Claude Code.
+
 3. Try it:
 
    ```
@@ -104,6 +106,8 @@ What `erdcloud` contains:
    ```
 
 2. Claude Code를 재시작하고 `/mcp`를 실행해 `erdcloud`를 선택한 뒤, 열리는 브라우저 창에서 ERDCloud에 로그인합니다. 권한 안내를 확인하고 **허용**을 누르면 끝입니다. 토큰을 복사할 필요가 없습니다.
+
+   ERDCloud 계정이 아직 없다면 로그인 화면에서 **Google** 또는 **GitHub**를 선택하세요. 처음 로그인할 때 계정이 자동으로 만들어지고 권한 안내 화면으로 돌아옵니다. 이메일로 가입했다면 이메일 인증을 마친 뒤 Claude Code에서 `/mcp`를 다시 실행하세요.
 
 3. 사용해 보세요.
 

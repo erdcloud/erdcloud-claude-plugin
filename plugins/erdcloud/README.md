@@ -29,6 +29,8 @@ Or in two steps:
 
 Then restart Claude Code, run `/mcp`, select `erdcloud` and sign in to ERDCloud in the browser window that opens. Review the permission screen and click **Allow**. No token has to be copied.
 
+**No ERDCloud account yet?** On the sign-in page choose **Google** or **GitHub**: an account is created automatically on your first sign-in and you return to the permission screen. If you sign up with an email address instead, verify the email first and then run `/mcp` again in Claude Code to finish connecting.
+
 ## What the plugin does and what it sends
 
 - The plugin contains only an MCP server declaration and skill instructions. It has no hooks, scripts, background processes or bundled binaries, and it does not run any local code.
