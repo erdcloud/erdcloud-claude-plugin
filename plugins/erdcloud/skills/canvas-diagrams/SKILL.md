@@ -51,6 +51,7 @@ Prefer a one-call generator. They lay everything out automatically; many single-
 - For a class-like box, `text` lines are split into compartments by a line containing only `--` (name / attributes / methods).
 - Styling: `color` (fill), `strokeColor`, `textColor` (omit to follow the fill automatically, pass an empty string on update to go back to automatic), `fontSize`, `rotation` (flowchart and general shapes).
 - `create_connector` connects two object ids (shapes, tables or memos): `lineStyle` straight or elbow, `arrowStart` / `arrowEnd` (`none` or `arrow`), `arrowStyle` and `startStyle` (`filled`, `open`, `x`, `triangle`, `diamond`, `diamondFilled`), `dashed`, `lineWidth`, `label`, `color`. For example inheritance = `arrowEnd: "arrow"`, `arrowStyle: "triangle"`; composition = `arrowStart: "arrow"`, `startStyle: "diamondFilled"`, `arrowEnd: "none"`.
+- Routing a line around objects: for `lineStyle: "elbow"`, `bend` (px, -1000..1000) moves the middle segment of the bent line from its default halfway position (up/down for lines that leave the bottom, left/right for lines that leave the side). For full control pass `waypoints: [{x, y}, ...]` (max 12, canvas coordinates, source to target); elbow lines get right-angle corners between the points, straight lines connect them directly. `update_connector` with `waypoints: []` returns to the automatic route.
 
 ## Limits and tips
 
